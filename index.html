@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0d0d0d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- SEO Meta Tags -->
+    <title>PC Morph — Мощные игровые ПК премиум-класса под заказ из Казани</title>
+    <meta name="description" content="Кастомные игровые ПК и рабочие станции премиум-класса. Гарантия 3 года, доставка по всей России. RTX 4060, 4070, 4080. Сборка от 1 дня.">
+    <meta name="keywords" content="игровой компьютер, купить игровой ПК, мощный компьютер, RTX 4080, игровой ПК на заказ, рабочая станция, компьютер для игр, PC Morph">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="PC Morph — Мощные игровые ПК премиум-класса">
+    <meta property="og:description" content="Кастомные сборки с гарантией 3 года. Доставка по всей России.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pcmorph.ru/">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="6" width="24" height="16" rx="2" fill="#b8e600"/>
+                        <rect x="5" y="9" width="18" height="10" rx="1" fill="#0d0d0d"/>
+                        <circle cx="20" cy="20" r="3" fill="#e65c00"/>
+                        <circle cx="20" cy="20" r="1.5" fill="#0d0d0d"/>
+                    </svg>
+                    PC Morph
+                </a>
+                <div class="header__actions">
+                    <a href="cart.html" class="header__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                    </a>
+                    <a href="profile.html" class="header__icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </a>
+                    <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-menu__link active">Главная</a>
+        <a href="catalog.html" class="mobile-menu__link">Каталог</a>
+        <a href="cart.html" class="mobile-menu__link">Корзина</a>
+        <a href="profile.html" class="mobile-menu__link">Профиль</a>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container" id="slider">
+            <!-- Slide 1 -->
+            <div class="slide active" data-slide="0">
+                <div class="slide__image">
+                    <img src="img/slide1.jpg" alt="Gaming PC">
+                </div>
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <span class="slide__badge">Новинка 2025</span>
+                    <h1 class="slide__title">Создаем мощные<br><span>игровые ПК</span><br>премиум-класса</h1>
+                    <p class="slide__desc">Кастомные сборки с гарантией 3 года. Доставка по всей России.</p>
+                    <div class="slide__actions">
+                        <a href="catalog.html" class="btn btn--primary btn--large">Выбрать компьютер</a>
+                        <a href="catalog.html" class="btn btn--outline btn--large">Конфигуратор</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" data-slide="1">
+                <div class="slide__image">
+                    <img src="img/slide2.jpg" alt="Workstation">
+                </div>
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <span class="slide__badge">Для профессионалов</span>
+                    <h1 class="slide__title">Рабочие станции<br><span>для рендеринга</span><br>и 3D моделирования</h1>
+                    <p class="slide__desc">Максимальная производительность для ваших проектов.</p>
+                    <div class="slide__actions">
+                        <a href="catalog.html" class="btn btn--primary btn--large">Смотреть модели</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" data-slide="2">
+                <div class="slide__image">
+                    <img src="img/slide3.jpg" alt="Custom Build">
+                </div>
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <span class="slide__badge">Индивидуально</span>
+                    <h1 class="slide__title">Сборка ПК<br><span>под ваши</span><br>задачи</h1>
+                    <p class="slide__desc">Подберем компоненты под любой бюджет и требования.</p>
+                    <div class="slide__actions">
+                        <a href="catalog.html" class="btn btn--primary btn--large">Начать сборку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="slider-arrow slider-arrow--prev" id="sliderPrev">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </button>
+            <div class="slider-dots" id="sliderDots">
+                <button class="slider-dot active" data-slide="0"></button>
+                <button class="slider-dot" data-slide="1"></button>
+                <button class="slider-dot" data-slide="2"></button>
+            </div>
+            <button class="slider-arrow slider-arrow--next" id="sliderNext">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Slider Progress -->
+        <div class="slider-progress">
+            <div class="slider-progress__bar" id="sliderProgress"></div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Выберите свой <span>PC Morph</span></h2>
+            <div class="categories__grid">
+                <a href="catalog.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="img/category-gaming.jpg" alt="Игровые ПК">
+                    </div>
+                    <div class="category-card__overlay"></div>
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Игровые ПК</h3>
+                        <p class="category-card__desc">Максимальная производительность для AAA-игр</p>
+                        <span class="category-card__link">Смотреть <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+                    </div>
+                </a>
+                <a href="catalog.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="img/category-workstation.jpg" alt="Рабочие станции">
+                    </div>
+                    <div class="category-card__overlay"></div>
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Рабочие станции</h3>
+                        <p class="category-card__desc">Для рендеринга, 3D и видеомонтажа</p>
+                        <span class="category-card__link">Смотреть <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+                    </div>
+                </a>
+                <a href="catalog.html" class="category-card">
+                    <div class="category-card__image">
+                        <img src="img/category-office.jpg" alt="Офисные ПК">
+                    </div>
+                    <div class="category-card__overlay"></div>
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Офисные ПК</h3>
+                        <p class="category-card__desc">Надежность для бизнеса</p>
+                        <span class="category-card__link">Смотреть <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features__grid">
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Подбор компонентов</h4>
+                    <p class="feature-item__desc">Индивидуальный подбор под ваши задачи</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Быстрая сборка</h4>
+                    <p class="feature-item__desc">От 1 до 3 дней на сборку и тестирование</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Гарантия 3 года</h4>
+                    <p class="feature-item__desc">Полная гарантия на все комплектующие</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h4 class="feature-item__title">Доставка по РФ</h4>
+                    <p class="feature-item__desc">Безопасная доставка в любой город</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные <span>модели</span></h2>
+                <a href="catalog.html" class="section-link">Все модели <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></a>
+            </div>
+            <div class="products__grid">
+                <a href="product.html" class="product-card">
+                    <div class="product-card__badge">Хит</div>
+                    <div class="product-card__image">
+                        <img src="img/pc-gaming-x1.jpg" alt="Morph Gaming X1">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Morph Gaming X1</h3>
+                        <p class="product-card__specs">RTX 4060, i5-13400F, 16GB RAM</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">85 000 ₽</span>
+                            <span class="btn btn--small" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Morph Gaming X1')">В корзину</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-card__badge badge--new">Новинка</div>
+                    <div class="product-card__image">
+                        <img src="img/pc-ultra-gaming.jpg" alt="Morph Ultra Gaming">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Morph Ultra Gaming</h3>
+                        <p class="product-card__specs">RTX 4080, i9-13900K, 32GB RAM</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">285 000 ₽</span>
+                            <span class="btn btn--small" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Morph Ultra Gaming')">В корзину</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/pc-pro-workstation.jpg" alt="Morph Pro Workstation">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Morph Pro Workstation</h3>
+                        <p class="product-card__specs">RTX 4070, i7-13700K, 64GB RAM</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">145 000 ₽</span>
+                            <span class="btn btn--small" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Morph Pro Workstation')">В корзину</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html" class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/pc-creator-studio.jpg" alt="Morph Creator Studio">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Morph Creator Studio</h3>
+                        <p class="product-card__specs">RTX 4070 Ti, i7-13700K, 32GB RAM</p>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">195 000 ₽</span>
+                            <span class="btn btn--small" onclick="event.preventDefault(); event.stopPropagation(); addToCart('Morph Creator Studio')">В корзину</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta__content">
+                <h2 class="cta__title">Не можете выбрать?</h2>
+                <p class="cta__desc">Наши специалисты помогут подобрать идеальную конфигурацию под ваши задачи и бюджет.</p>
+                <a href="catalog.html" class="btn btn--primary btn--large">Перейти в каталог</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="6" width="24" height="16" rx="2" fill="#b8e600"/>
+                            <rect x="5" y="9" width="18" height="10" rx="1" fill="#0d0d0d"/>
+                            <circle cx="20" cy="20" r="3" fill="#e65c00"/>
+                            <circle cx="20" cy="20" r="1.5" fill="#0d0d0d"/>
+                        </svg>
+                        PC Morph
+                    </a>
+                    <p class="footer__text">Мощные игровые ПК премиум-класса. Создаем с 2018 года.</p>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Каталог</h4>
+                    <ul class="footer__links">
+                        <li><a href="catalog.html">Игровые ПК</a></li>
+                        <li><a href="catalog.html">Рабочие станции</a></li>
+                        <li><a href="catalog.html">Офисные ПК</a></li>
+                        <li><a href="catalog.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Информация</h4>
+                    <ul class="footer__links">
+                        <li><a href="catalog.html">Доставка</a></li>
+                        <li><a href="catalog.html">Гарантия</a></li>
+                        <li><a href="catalog.html">Оплата</a></li>
+                        <li><a href="catalog.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__title">Контакты</h4>
+                    <ul class="footer__links">
+                        <li>+7 (999) 888-77-66</li>
+                        <li>info@pcmorph.ru</li>
+                        <li>Москва, ул. Примерная, 1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 PC Morph. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="bottom-nav__item active">
+            <svg class="bottom-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            <span class="bottom-nav__label">Главная</span>
+        </a>
+        <a href="catalog.html" class="bottom-nav__item">
+            <svg class="bottom-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"/>
+                <rect x="14" y="3" width="7" height="7"/>
+                <rect x="14" y="14" width="7" height="7"/>
+                <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <span class="bottom-nav__label">Каталог</span>
+        </a>
+        <a href="cart.html" class="bottom-nav__item">
+            <svg class="bottom-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <span class="bottom-nav__label">Корзина</span>
+        </a>
+        <a href="profile.html" class="bottom-nav__item">
+            <svg class="bottom-nav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span class="bottom-nav__label">Профиль</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+    <script>
+        // Hero Slider
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const prevBtn = document.getElementById('sliderPrev');
+        const nextBtn = document.getElementById('sliderNext');
+        const progressBar = document.getElementById('sliderProgress');
+        
+        let currentSlide = 0;
+        let slideInterval;
+        const slideDuration = 6000;
+        
+        function goToSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            currentSlide = index;
+            resetProgress();
+        }
+        
+        function nextSlide() {
+            const next = (currentSlide + 1) % slides.length;
+            goToSlide(next);
+        }
+        
+        function prevSlide() {
+            const prev = (currentSlide - 1 + slides.length) % slides.length;
+            goToSlide(prev);
+        }
+        
+        function resetProgress() {
+            progressBar.style.transition = 'none';
+            progressBar.style.width = '0%';
+            setTimeout(() => {
+                progressBar.style.transition = `width ${slideDuration}ms linear`;
+                progressBar.style.width = '100%';
+            }, 50);
+        }
+        
+        function startSlider() {
+            resetProgress();
+            slideInterval = setInterval(nextSlide, slideDuration);
+        }
+        
+        function stopSlider() {
+            clearInterval(slideInterval);
+        }
+        
+        prevBtn.addEventListener('click', () => {
+            stopSlider();
+            prevSlide();
+            startSlider();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            stopSlider();
+            nextSlide();
+            startSlider();
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopSlider();
+                goToSlide(index);
+                startSlider();
+            });
+        });
+        
+        // Start slider
+        startSlider();
+    </script>
+</body>
+</html>
